@@ -26,29 +26,16 @@ LLPS-related protein predictor from amino acid sequence
 - **Relevance**: Linked to cellular processes and various diseases, including neurodegenerative disorders.
 
 
-## Dependencies
+## Installation
 
-Install [Bio Embeddings](https://github.com/sacdallago/bio_embeddings) for protein embedding using LLM and ML
-```
-pip install bio-embeddings==0.2.2
-```
+First install pixi, then let the configuration file handle the rest.
 
-Install [PyTorch](https://pytorch.org) (<=1.10.0,>=1.8.0) suitable for your machine
-
-Linux and Windows
 ```
-#CUDA 11.1
-pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
-
-#CPU only
-pip install torch==1.10.0+cpu torchvision==0.11.0+cpu torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+# installing on unix based systems, windows not supported
+curl -fsSL https://pixi.sh/install.sh | bash
+pixi install
+pixi run build_train
 ```
-MacOS
-```
-pip install torch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0
-```
-
-More information: [PyTorch](https://pytorch.org/get-started/previous-versions/)
 
 
 ## Usage
