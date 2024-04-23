@@ -42,6 +42,8 @@ pixi run build_train
 
 Run [`train_model.py`](https://github.com/IwasakiLab/Seq2Phase/blob/main/train_model.py) first, then [`seq2phase.py`](https://github.com/IwasakiLab/Seq2Phase/blob/main/seq2phase.py).
 ```bash
+# enter pixi environement
+pixi shell
 python train_model.py
 python seq2phase.py -i input.fasta -o output.tsv
 ```
